@@ -7,9 +7,9 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-const api_key = "add your openai key";
+const api_key = "add your getstream.io key";
 const api_secret =
-  "add your openai secret key";
+  "add your getstream.io secret key";
 const serverClient = StreamChat.getInstance(api_key, api_secret);
 
 app.post("/signup", async (req, res) => {
